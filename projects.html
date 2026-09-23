@@ -3,21 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV (PDF) &middot; Zakia Sultana</title>
-<meta name="description" content="CV of Zakia Sultana — PhD student in EECS, University of Arkansas.">
+<title>Projects &middot; Zakia Sultana</title>
+<meta name="description" content="Hardware, VLSI, and machine learning projects by Zakia Sultana.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  .pdf-frame {
-    width: 100%;
-    height: 85vh;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: #fff;
-  }
-</style>
 </head>
 <body>
 
@@ -29,7 +20,7 @@
     <nav class="main">
       <a href="index.html">Home</a>
       <a href="papers.html">Research</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="cv.html">CV</a>
       <a class="ico" href="https://www.linkedin.com/in/zakia-sultana-9bb7311a5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
       <a class="ico" href="https://scholar.google.com/citations?user=cTfUwfAAAAAJ&hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Scholar</a>
@@ -40,9 +31,67 @@
 </header>
 
 <main class="wrap">
-  <h1>CV</h1>
-  <iframe class="pdf-frame" src="assets/Zakia-Sultana-CV.pdf" title="Zakia Sultana CV"></iframe>
-  <p class="muted" style="margin-top:12px;font-size:14px">If the PDF doesn&rsquo;t display above, <a href="assets/Zakia-Sultana-CV.pdf">open it directly</a>, or view the <a href="cv.html">full CV as a webpage</a>.</p>
+
+  <h1>Projects</h1>
+  <p class="muted">Hands-on work across chip design, FPGAs, and machine learning. More code on <a href="https://github.com/zakiapranti" target="_blank" rel="noopener">GitHub</a>.</p>
+
+  <div class="card">
+    <span class="tag">FPGA &middot; Deep Learning</span>
+    <h3>FPGA-Based Car Detection System</h3>
+    <p class="abstract">Trained a CNN on vehicle image datasets and deployed it on an FPGA with a live camera interface for real-time car-type detection. <span class="muted">Tools: Python, Verilog, Quartus.</span></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Computer Architecture</span>
+    <h3>SAP-1 Architecture Design</h3>
+    <p class="abstract">Built a complete SAP-1 (Simple-As-Possible) computer: RAM, control sequencer, program counter, registers, and ALU. <span class="muted">Tools: Logisim.</span></p>
+    <div class="meta-links"><a href="https://github.com/zakiapranti/VLSI" target="_blank" rel="noopener">View on GitHub</a></div>
+  </div>
+
+  <div class="card">
+    <span class="tag">Custom Layout</span>
+    <h3>CMOS Logic Gate Design</h3>
+    <p class="abstract">Schematics and layouts for NOT, AND, NAND, OR, NOR, adder, decoder, and MUX circuits. <span class="muted">Tools: Cadence Virtuoso.</span></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Digital Design</span>
+    <h3>VHDL Circuit Implementation</h3>
+    <p class="abstract">VHDL code and test benches for half adder, full adder, multiplexer, and decoder circuits. <span class="muted">Tools: Quartus, ModelSim-Altera.</span></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Undergraduate Thesis</span>
+    <h3>Feedback-Enhanced Multi-Layer Intrusion Detection System for Wireless Sensor Networks</h3>
+    <p class="abstract">A hybrid model with edge-layer anomaly detection and cloud-layer anomaly classification, plus attack prevention, for wireless sensor networks. <span class="muted">Tools: Python.</span></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Machine Learning</span>
+    <h3>ML Algorithms from Scratch</h3>
+    <p class="abstract">Linear and logistic regression, KNN, naive Bayes, decision trees, k-means, and SGD implemented from first principles. <span class="muted">Tools: Python, Jupyter.</span></p>
+    <div class="meta-links"><a href="https://github.com/zakiapranti/ML_from_Scratch" target="_blank" rel="noopener">View on GitHub</a></div>
+  </div>
+
+  <div class="card">
+    <span class="tag">Wireless Communication</span>
+    <h3>Wireless Communication Simulations</h3>
+    <p class="abstract">Notebook-based simulations of wireless communication systems. <span class="muted">Tools: Python, Jupyter.</span></p>
+    <div class="meta-links"><a href="https://github.com/zakiapranti/wireless-comm." target="_blank" rel="noopener">View on GitHub</a></div>
+  </div>
+
+  <div class="card">
+    <span class="tag">Networking</span>
+    <h3>Network Topology Design</h3>
+    <p class="abstract">A complete network of routers, switches, hubs, and end nodes configured with the RIP routing protocol. <span class="muted">Tools: Cisco Packet Tracer.</span></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">RF &middot; Antennas</span>
+    <h3>Microstrip Patch Antenna Design</h3>
+    <p class="abstract">Undergraduate project designing and simulating a microstrip patch antenna. <span class="muted">Tools: CST Microwave Studio.</span></p>
+  </div>
+
 </main>
 
 <footer class="site">

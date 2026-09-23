@@ -364,3 +364,16 @@ hr.div {
     align-items: flex-start;
   }
 }
+
+/* Nav icons */
+nav.main a.ico {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav.main a.ico svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
