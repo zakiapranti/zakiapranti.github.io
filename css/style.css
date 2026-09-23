@@ -369,11 +369,11 @@ hr.div {
 nav.main a.ico {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 nav.main a.ico svg {
-  width: 15px;
-  height: 15px;
+  width: 0.8em;
+  height: 0.8em;
   flex-shrink: 0;
 }
