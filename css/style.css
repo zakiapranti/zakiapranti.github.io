@@ -1,0 +1,366 @@
+:root {
+  --bg: #f3f3f2;
+  --bg-alt: #e8e7e5;
+  --text: #232323;
+  --muted: #6b6b69;
+  --accent: #52504b;
+  --accent-soft: #e0dfdc;
+  --border: #d9d8d5;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Job market banner */
+.banner {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  padding: 8px 16px;
+}
+
+.banner a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.banner a:hover {
+  color: #a9c8f5;
+}
+
+/* Header */
+header.site {
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 18px;
+  margin-bottom: 40px;
+}
+
+header.site .row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+header.site .name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav.main {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 15px;
+}
+
+nav.main a {
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+nav.main a:hover,
+nav.main a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Footer */
+footer.site {
+  border-top: 1px solid var(--border);
+  margin-top: 64px;
+  padding: 24px 0 48px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer.site a {
+  color: var(--muted);
+}
+
+footer.site a:hover {
+  color: #2f5fa8;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--serif);
+  color: var(--text);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 21px;
+  margin: 40px 0 16px;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: #2f5fa8;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.hero img {
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.hero .bio p:last-child {
+  margin-bottom: 0;
+}
+
+.links-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 20px 0 4px;
+  font-size: 15px;
+}
+
+.links-row a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+.links-row a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Interest tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+}
+
+.card .tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.card .byline {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.card .venue {
+  font-style: italic;
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card p.abstract {
+  margin-bottom: 12px;
+  font-size: 15.5px;
+}
+
+.card .meta-links {
+  font-size: 14px;
+}
+
+.card .meta-links a {
+  margin-right: 14px;
+}
+
+/* Feature box on home */
+.feature {
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin: 28px 0 8px;
+}
+
+.feature .eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.feature h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.feature p {
+  font-size: 15.5px;
+  color: var(--text);
+}
+
+.feature a.more {
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+/* CV page */
+.cv-entry {
+  margin-bottom: 18px;
+}
+
+.cv-entry .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.cv-entry .top strong {
+  font-size: 15.5px;
+}
+
+.cv-entry .date {
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.cv-entry .sub {
+  color: var(--muted);
+  font-size: 14.5px;
+  margin-top: 2px;
+}
+
+.cv-entry ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.cv-download {
+  display: inline-block;
+  margin: 6px 0 32px;
+  padding: 9px 18px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14.5px;
+}
+
+.cv-download:hover {
+  background: #2f5fa8;
+}
+
+hr.div {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 36px 0;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero img {
+    width: 128px;
+    height: 128px;
+  }
+  header.site .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
