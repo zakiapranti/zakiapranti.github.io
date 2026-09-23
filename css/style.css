@@ -79,9 +79,9 @@ header.site .name {
 
 nav.main {
   display: flex;
-  gap: 6px 15px;
+  gap: 6px 12px;
   flex-wrap: wrap;
-  font-size: 14.5px;
+  font-size: 14px;
 }
 
 nav.main a {
